@@ -1,0 +1,7 @@
+proxy:
+  ip: 0.0.0.0
+  port: 8080
+  code: admin
+local_storage:
+  directory: localhost
+  filename_exe: run.exe
