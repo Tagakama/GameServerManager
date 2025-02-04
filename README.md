@@ -1,31 +1,31 @@
-GameServerManager  — это утилита для запуска игровых серверов на локальных машинах (с внутренним/серым IP-адресом), к которым нет прямого доступа из интернета. 
-Описание 
+GameServerManager  is an application designed to launch game servers on local machines (with private/gray IP addresses) that are inaccessible directly from the internet. 
+Description 
 
-Приложение разработано для управления игровыми серверами в среде с ограниченным доступом извне. Для работы GameServerManager требуется дополнительный прокси-сервер , который обеспечивает связь между внешними клиентами и локальными серверами. Прокси-сервер включён в репозиторий и был протестирован на выделенных Linux-серверах. 
+This utility is created for managing game servers in environments with limited external access. To function properly, GameServerManager  requires a proxy server , which is included in the repository and has been tested on dedicated Linux servers. 
 
-В нашем проекте этот инструмент использовался совместно с фреймворком Photon Fusion  для тестирования сетевой игры во время её разработки. 
-Сценарий использования 
+In our project, this tool was used in conjunction with the Photon Fusion  framework during the development and testing of our networked game. 
+Use Case 
 
-    Локальный сервер без публичного IP : GameServerManager запускается на локальной машине, где находятся игровые серверы.
-    Прокси-сервер с публичным IP : Прокси-сервер работает на отдельной машине с белым IP, через которую осуществляется доступ из интернета.
-    Сетевая игра : Используется для тестирования сетевых компонентов вашей игры, например, при работе с Photon Fusion.
+    Local Server Without Public IP : GameServerManager runs on a local machine where game servers are hosted.
+    Proxy Server with Public IP : The proxy server operates on a separate machine with a public IP, enabling external clients to connect.
+    Networked Game Development : Ideal for testing network components of your game, especially when working with Photon Fusion.
      
 
-Особенности 
+Features 
 
-    Работа с локальными серверами : Возможность запускать серверы на машинах без публичного IP.
-    Интеграция с прокси-сервером : Обеспечивает доступ к локальным серверам из интернета.
-    Комментированный код : Весь исходный код снабжён комментариями для удобства понимания.
-    Готовый пример прокси-сервера : Включён готовый прокси-сервер, протестированный на Linux.
+    Private Server Management : Ability to run servers on machines without a public IP.
+    Integration with Proxy Server : Facilitates access to local servers from the internet.
+    Fully Commented Code : All source code is well-commented for ease of understanding.
+    Ready-to-Use Proxy Server : Includes a pre-configured proxy server tested on Linux.
      
 
-Требования 
+Requirements 
 
-    Основные зависимости :
-        Go версии 1.18 или выше.
-        Операционная система: Windows/Linux.
+    Main Dependencies :
+        Go version 1.18 or higher.
+        Operating System: Windows/Linux.
          
-    Дополнительно :
-        Прокси-сервер с публичным IP для работы с внешними клиентами.
+    Additional :
+        A proxy server with a public IP for external client access.
          
      
